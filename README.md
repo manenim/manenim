@@ -1,19 +1,19 @@
 # Hi there, I'm Manenimabasi 👋
 ## It's Nice meeting you!!
 
-- I am a full stack developer Passionate about building software as well as web experiences that solves real world problems.
+- I am a Fullstack Engineer Passionate about building software as well as web experiences that solves real world problems.
 
 - I am passionate about teaching sharing my knowledge of Typescript, React and NodeJS.  
 
 - I also take pleasure in providing guidance and answers to devs who are stuck. 
 
-- I'm a highly Self-Motivated and life-long learner.
+- I'm highly Self-Motivated and a life-long learner.
 
 - I'm able to learn quickly and Adapt continuously to new technologies and ways of solving problems.
 
 - 📫  Would be to hear from you. Let's connect: 
   - feel free to send me a mail: [@manenimabasiuoh](mailto:manenimabasiudoh@gmail.com) 
-  <!-- - Let's Connect on LinkedIn: [@manenimabasiuoh](mailto:manenimabasiudoh@gmail.com) -->
+  <!-- - Let's Connect on LinkedIn: [@manenimabasiudoh](mailto:manenimabasiudoh@gmail.com) -->
 
 
 ## 🛠️ My Tech Stack of choice

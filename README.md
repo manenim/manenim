@@ -11,8 +11,8 @@
 
 - I'm able to learn quickly and Adapt continuously to new technologies and ways of solving problems.
 
-- 📫  Would be to hear from you. Let's connect: 
-  - feel free to send me a mail: [@manenimabasiudoh](mailto:manenimabasiudoh@gmail.com) 
+- 📫  Would be nice to hear from you. Let's connect: 
+  - Feel free to send me a mail: [@manenimabasiudoh](mailto:manenimabasiudoh@gmail.com) 
   <!-- - Let's Connect on LinkedIn: [@manenimabasiudoh](mailto:manenimabasiudoh@gmail.com) -->
 
 

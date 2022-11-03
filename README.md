@@ -1,7 +1,7 @@
 # Hi there, I'm Manenimabasi 👋
 ## It's Nice meeting you!!
 
-- I am a Fullstack Engineer Passionate about building software as well as web experiences that solves real world problems.
+- I am a Software Developer Passionate about building software as well as web experiences that solves real world problems.
 
 - I am passionate about teaching and sharing my knowledge of Typescript, React and NodeJS.  
 

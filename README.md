@@ -1,4 +1,4 @@
-# Manenimabasi Udoh — Senior Backend Engineer
+# Manenimabasi Udoh - Senior Backend Engineer
 
 Backend systems engineer with 8+ years of experience building distributed, 
 cloud-native infrastructure that scales in production.

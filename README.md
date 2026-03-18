@@ -1,61 +1,63 @@
-# Hi there, I'm Manenimabasi 👋
-## It's Nice meeting you!!
+# Manenimabasi Udoh — Senior Backend Engineer
 
-- I am a Software Developer Passionate about building software as well as web experiences that solves real world problems.
+Backend systems engineer with 8+ years of experience building distributed, 
+cloud-native infrastructure that scales in production.
 
-- I am passionate about teaching and sharing my knowledge of Typescript, React and NodeJS.  
+## What I Build
 
-- I also take pleasure in providing guidance and answers to devs who are stuck. 
+- **Distributed Systems** — microservices, event-driven pipelines, 
+  high-availability platforms
+- **AI/LLM Engineering** — FastAPI inference services, RAG pipelines, 
+  LangChain agents, LLM orchestration
+- **Cloud Infrastructure** — AWS, GCP, Kubernetes, Docker, CI/CD automation
+- **API Platforms** — REST, gRPC, payment integrations (Stripe, Paystack)
 
-- I'm highly Self-Motivated and a life-long learner.
+## Tech Stack
 
-- I'm able to learn quickly and Adapt continuously to new technologies and ways of solving problems.
+**Languages**
 
-- 📫  Would be nice to hear from you. Let's connect: 
-  - Feel free to send me a mail: [@manenimabasiudoh](mailto:manenimabasiudoh@gmail.com) 
-  <!-- - Let's Connect on LinkedIn: [@manenimabasiudoh](mailto:manenimabasiudoh@gmail.com) -->
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
+**Backend & AI**
 
-## 🛠️ My Tech Stack of choice
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-000000?style=flat-square&logo=chainlink&logoColor=white)
+![gRPC](https://img.shields.io/badge/gRPC-244c5a?style=flat-square&logo=google&logoColor=white)
 
-- 💻
+**Infrastructure**
 
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
-![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat-square&logo=terraform&logoColor=white)
 
+**Data & Messaging**
 
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
 
-- 🛢️
+## Featured Projects
 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+| Project | Description | Stack |
+|---|---|---|
+| [pr-review-agent](https://github.com/manenim/pr-review-agent) | AI-powered GitHub PR review bot with async LLM processing and inline comments | Python, FastAPI, LangChain, Gemini |
+| [gateway-rate-limiter](https://github.com/manenim/gateway-rate-limiter) | Distributed token-bucket rate limiter — ~119 ns/op benchmarked | Go, Redis, Lua |
+| [task-orchestrator](https://github.com/manenim/task-orchestrator) | Fault-tolerant distributed task engine with gRPC streaming | Go, gRPC, PostgreSQL |
+| [hms-ai-platform-backend](https://github.com/manenim/hms-ai-platform-backend) | Hotel management platform with AI fraud detection and real-time events | NestJS, Gemini, Socket.IO |
 
+## Certifications
 
+- Certified Kubernetes Administrator (CKA) — CNCF / Linux Foundation
+- AWS Certified Solutions Architect — Associate
 
+## Let's Connect
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/manenimabasi-udoh)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:manenimabasiudoh@gmail.com)
+[![pkg.go.dev](https://img.shields.io/badge/pkg.go.dev-00ADD8?style=flat-square&logo=go&logoColor=white)](https://pkg.go.dev/github.com/manenim)
 
-
-
-
-<!--
-**manenim/manenim** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+> Open to senior remote backend and AI/LLM engineering roles.

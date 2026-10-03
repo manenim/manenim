@@ -1,16 +1,23 @@
 # Manenimabasi Udoh | Senior Backend Engineer
 
-Backend systems engineer with 8+ years of experience building distributed, 
-cloud-native infrastructure that scales in production.
+I build backend systems in Go and TypeScript, with a focus on payments, wallets,
+and reliable distributed workflows. At Infostrategy Technology, I lead hands-on
+backend delivery across healthcare, commerce, and enterprise ERP systems.
+
+My software development journey began in August 2017 with independent projects
+and freelance work. My current work combines service design, implementation,
+cross-service integration, code review, and mentoring.
 
 ## What I Build
 
-- **Distributed Systems** — microservices, event-driven pipelines, 
-  high-availability platforms
-- **AI/LLM Engineering** — FastAPI inference services, RAG pipelines, 
-  LangChain agents, LLM orchestration
-- **Cloud Infrastructure** — AWS, GCP, Kubernetes, Docker, CI/CD automation
-- **API Platforms** — REST, gRPC, payment integrations (Stripe, Paystack)
+- **Payments and Wallets**: Go/PostgreSQL services, precise balances, row-level
+  locking, immutable ledgers, idempotency, and provider integrations
+- **Distributed Workflows**: gRPC APIs, Kafka events, transactional outbox/inbox
+  patterns, retries, and asynchronous processing
+- **Backend Platforms**: authentication, RBAC, multi-tenant services, healthcare,
+  commerce, and enterprise ERP workflows
+- **Cloud and Delivery**: AWS, Docker, CI/CD, and Kubernetes competency backed by CKA
+- **Applied AI**: backend services that integrate LLMs into engineering and product workflows
 
 ## Tech Stack
 
@@ -44,15 +51,16 @@ cloud-native infrastructure that scales in production.
 
 | Project | Description | Stack |
 |---|---|---|
-| [pr-review-agent](https://github.com/manenim/pr-review-agent) | AI-powered GitHub PR review bot with async LLM processing and inline comments | Python, FastAPI, LangChain, Gemini |
-| [gateway-rate-limiter](https://github.com/manenim/gateway-rate-limiter) | Distributed token-bucket rate limiter — ~119 ns/op benchmarked | Go, Redis, Lua |
-| [task-orchestrator](https://github.com/manenim/task-orchestrator) | Fault-tolerant distributed task engine with gRPC streaming | Go, gRPC, PostgreSQL |
-| [hms-ai-platform-backend](https://github.com/manenim/hms-ai-platform-backend) | Hotel management platform with AI fraud detection and real-time events | NestJS, Gemini, Socket.IO |
+| [task-orchestrator](https://github.com/manenim/task-orchestrator) | Distributed task scheduling with gRPC streaming, retries, timeouts, and cancellation | Go, gRPC, PostgreSQL, Redis |
+| [gateway-rate-limiter](https://github.com/manenim/gateway-rate-limiter) | Distributed token-bucket rate limiting with atomic Redis/Lua operations and configurable failure policies | Go, Redis, Lua |
+| [nestjs-saas-platform](https://github.com/manenim/nestjs-saas-platform) | Multi-tenant backend with tenant-aware context, authentication, RBAC, and billing workflows | TypeScript, NestJS, PostgreSQL, Redis |
+| [pr-review-agent](https://github.com/manenim/pr-review-agent) | AI-assisted PR review with webhook validation, background processing, and structured inline findings | Python, FastAPI, LangChain, Gemini |
+| [hms-ai-platform-backend](https://github.com/manenim/hms-ai-platform-backend) | Hotel operations backend with bookings, room inventory, real-time events, and applied AI integrations | TypeScript, NestJS, PostgreSQL, Gemini |
 
 ## Certifications
 
-- Certified Kubernetes Administrator (CKA) — CNCF / Linux Foundation
-- AWS Certified Solutions Architect — Associate
+- Certified Kubernetes Administrator (CKA), Linux Foundation / CNCF: [View badge](https://www.credly.com/badges/3db71936-40a0-4806-850f-39dc584f5857/public_url)
+- AWS Certified Solutions Architect - Associate: [View badge](https://www.credly.com/badges/bde40158-6f10-4a49-b8be-bdb92366d278/public_url)
 
 ## Let's Connect
 
@@ -60,4 +68,5 @@ cloud-native infrastructure that scales in production.
 [![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:manenimabasiudoh@gmail.com)
 [![pkg.go.dev](https://img.shields.io/badge/pkg.go.dev-00ADD8?style=flat-square&logo=go&logoColor=white)](https://pkg.go.dev/github.com/manenim)
 
-> Open to senior remote backend and AI/LLM engineering roles.
+> Open to remote Senior Backend Engineer, Lead Backend Engineer, and Go engineering roles.
+

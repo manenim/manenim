@@ -47,6 +47,10 @@ cross-service integration, code review, and mentoring.
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apache-kafka&logoColor=white)
 
+## Engineering Case Study
+
+[Payment and Wallet Reliability in Go](https://github.com/manenim/manenim/blob/main/docs/payment-wallet-reliability.md): stable payment identity, wallet concurrency, transactional messaging, and replay-safe workflows.
+
 ## Featured Projects
 
 | Project | Description | Stack |

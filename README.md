@@ -56,7 +56,7 @@ cross-service integration, code review, and mentoring.
 | Project | Description | Stack |
 |---|---|---|
 | [task-orchestrator](https://github.com/manenim/task-orchestrator) | Distributed task scheduling with gRPC streaming, retries, timeouts, and cancellation | Go, gRPC, PostgreSQL, Redis |
-| [gateway-rate-limiter](https://github.com/manenim/gateway-rate-limiter) | Distributed token-bucket rate limiting with atomic Redis/Lua operations and configurable failure policies | Go, Redis, Lua |
+| [gateway-rate-limiter](https://github.com/manenim/gateway-rate-limiter) | Distributed token-bucket rate limiting with atomic Redis/Lua operations, in-memory support, and decision metrics | Go, Redis, Lua |
 | [nestjs-saas-platform](https://github.com/manenim/nestjs-saas-platform) | Multi-tenant backend with tenant-aware context, authentication, RBAC, and billing workflows | TypeScript, NestJS, PostgreSQL, Redis |
 | [pr-review-agent](https://github.com/manenim/pr-review-agent) | AI-assisted PR review with webhook validation, background processing, and structured inline findings | Python, FastAPI, LangChain, Gemini |
 | [hms-ai-platform-backend](https://github.com/manenim/hms-ai-platform-backend) | Hotel operations backend with bookings, room inventory, real-time events, and applied AI integrations | TypeScript, NestJS, PostgreSQL, Gemini |

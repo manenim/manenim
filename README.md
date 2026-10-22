@@ -6,7 +6,7 @@ backend delivery across healthcare, commerce, and enterprise ERP systems.
 
 ## Tech Stack
 
-[![Go, TypeScript, PostgreSQL, Docker and Kubernetes](https://skillicons.dev/icons?i=go,ts,python,postgres,kafka,kubernetes&perline=5)](https://github.com/manenim?tab=repositories)
+[![Go, TypeScript, PostgreSQL, Docker and Kubernetes](https://skillicons.dev/icons?i=go,ts,python,postgres,kafka,docker,kubernetes&perline=5)](https://github.com/manenim?tab=repositories)
 
 ## Certifications
 

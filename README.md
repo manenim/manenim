@@ -8,28 +8,6 @@ backend delivery across healthcare, commerce, and enterprise ERP systems.
 
 [![Go, TypeScript, PostgreSQL, Docker and Kubernetes](https://skillicons.dev/icons?i=go,ts,postgres,docker,kubernetes&perline=5)](https://github.com/manenim?tab=repositories)
 
-- **Languages and APIs**: Go, TypeScript, Python, REST, gRPC
-- **Backend and AI**: NestJS, FastAPI, LangChain, LLM integrations
-- **Data and Messaging**: PostgreSQL, MongoDB, Redis, Kafka, NATS
-- **Cloud and Delivery**: AWS, Docker, Kubernetes, Terraform, GitHub Actions
-
-## Engineering Case Study
-
-[Payment and Wallet Reliability in Go](https://github.com/manenim/manenim/blob/main/docs/payment-wallet-reliability.md): stable payment identity, wallet concurrency, transactional messaging, and replay-safe workflows.
-
-## Featured Projects
-
-[![Task Orchestrator CI](https://github.com/manenim/task-orchestrator/actions/workflows/ci.yml/badge.svg)](https://github.com/manenim/task-orchestrator/actions/workflows/ci.yml)
-[![Rate Limiter CI](https://github.com/manenim/gateway-rate-limiter/actions/workflows/ci.yml/badge.svg)](https://github.com/manenim/gateway-rate-limiter/actions/workflows/ci.yml)
-
-| Project | Description | Stack |
-|---|---|---|
-| [task-orchestrator](https://github.com/manenim/task-orchestrator) | Distributed task scheduling with gRPC streaming, retries, timeouts, and cancellation | Go, gRPC, PostgreSQL, Redis |
-| [gateway-rate-limiter](https://github.com/manenim/gateway-rate-limiter) | Distributed token-bucket rate limiting with atomic Redis/Lua operations, in-memory support, and decision metrics | Go, Redis, Lua |
-| [nestjs-saas-platform](https://github.com/manenim/nestjs-saas-platform) | Multi-tenant backend with tenant-aware context, authentication, RBAC, and billing workflows | TypeScript, NestJS, PostgreSQL, Redis |
-| [pr-review-agent](https://github.com/manenim/pr-review-agent) | AI-assisted PR review with webhook validation, background processing, and structured inline findings | Python, FastAPI, LangChain, Gemini |
-| [hms-ai-platform-backend](https://github.com/manenim/hms-ai-platform-backend) | Hotel operations backend with bookings, room inventory, real-time events, and applied AI integrations | TypeScript, NestJS, PostgreSQL, Gemini |
-
 ## Certifications
 
 [![CKA credential](https://img.shields.io/badge/CKA-Certified%20Kubernetes%20Administrator-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://www.credly.com/badges/3db71936-40a0-4806-850f-39dc584f5857/public_url)

@@ -1,31 +1,8 @@
 # Manenimabasi Udoh | Senior Backend Engineer
 
-I build backend systems in Go and TypeScript, with a focus on payments, wallets,
+I build backend systems in Go, TypeScript and Python, with a focus on payments, wallets,
 and reliable distributed workflows. At Infostrategy Technology, I lead hands-on
 backend delivery across healthcare, commerce, and enterprise ERP systems.
-
-My software development journey began in August 2017 with independent projects
-and freelance work. My current work combines service design, implementation,
-cross-service integration, code review, and mentoring.
-
-## Merged Open Source Contributions
-
-[![NATS Go client merged PR](https://img.shields.io/github/pulls/detail/state/nats-io/nats.go/2198?style=flat-square&label=NATS%20Go%20client)](https://github.com/nats-io/nats.go/pull/2198)
-[![Argo CD merged PR](https://img.shields.io/github/pulls/detail/state/argoproj/argo-cd/30070?style=flat-square&label=Argo%20CD)](https://github.com/argoproj/argo-cd/pull/30070)
-
-- **[NATS Go client #2198](https://github.com/nats-io/nats.go/pull/2198)**: added JetStream `FetchMaxBytes` to bound fetching by message count and aggregate bytes, with option validation and server-backed regression tests.
-- **[Argo CD #30070](https://github.com/argoproj/argo-cd/pull/30070)**: migrated eight Teams notification templates to Workflows and added Go regression checks that gate catalog generation.
-
-## What I Build
-
-- **Payments and Wallets**: Go/PostgreSQL services with transaction-safe balances,
-  immutable ledgers, idempotency, and provider integrations
-- **Distributed Workflows**: gRPC APIs, Kafka events, transactional outbox/inbox
-  patterns, retries, and asynchronous processing
-- **Backend Platforms**: multi-tenant identity and RBAC across healthcare,
-  commerce, and enterprise ERP workflows
-- **Cloud and Delivery**: AWS, Docker, CI/CD, and Kubernetes competency backed by CKA
-- **Applied AI**: backend services that integrate LLMs into engineering and product workflows
 
 ## Tech Stack
 

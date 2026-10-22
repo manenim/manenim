@@ -21,15 +21,9 @@ backend delivery across healthcare, commerce, and enterprise ERP systems.
 ![Public GitHub activity statistics](./profile/stats.svg)
 
 <details>
-<summary>Contribution streak and repository languages</summary>
-
-<br>
+<summary>Contribution streak and repository languages</summary> 
 
 ![GitHub contribution streak](./profile/streak.svg)
-
-![Languages across my public repositories](./profile/languages.svg)
-
-Language percentages show the share of my original public repositories by primary language, not code volume, proficiency or the full scope of my professional and upstream work.
 
 </details>
 

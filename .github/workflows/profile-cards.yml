@@ -15,55 +15,117 @@ concurrency:
 jobs:
   cards:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 5
     permissions:
       contents: write
     steps:
       - name: Check out profile
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
-      - name: Generate public GitHub statistics
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: stats
-          options: username=manenim&show_icons=true&hide_rank=true&theme=github_dark&hide_border=true&custom_title=Public%20GitHub%20Activity
-          path: profile/stats.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          core_version: "2.1.3"
-          fail_on_error: "true"
-      - name: Generate public repository language breakdown
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: top-langs
-          options: username=manenim&layout=compact&langs_count=5&theme=github_dark&hide_border=true
-          path: profile/languages.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          core_version: "2.1.3"
-          fail_on_error: "true"
-      - name: Cache contribution streak
+      - name: Generate cards from public data
         run: |
-          python3 - <<'PY'
+          python3 - <<'PYTHON'
+          """Refresh profile SVGs using public data, without a personal access token."""
+          from collections import Counter
+          from datetime import datetime, timezone
+          from html import escape
+          import json
           from pathlib import Path
+          from urllib.parse import urlencode
           from urllib.request import Request, urlopen
           import xml.etree.ElementTree as ET
-          target = Path("profile/streak.svg")
-          url = "https://streak-stats.demolab.com/?user=manenim&theme=github-dark-blue&hide_border=true"
-          try:
-              request = Request(url, headers={"User-Agent": "manenim-profile-cards"})
+          
+          USER = 'manenim'
+          OUT = Path('profile')
+          OUT.mkdir(exist_ok=True)
+          
+          
+          def get(url):
+              request = Request(url, headers={'User-Agent': 'manenim-profile-cards',
+                                              'Accept': 'application/vnd.github+json'})
               with urlopen(request, timeout=30) as response:
-                  data = response.read()
+                  return response.read()
+          
+          
+          def api(path):
+              return json.loads(get('https://api.github.com' + path))
+          
+          
+          def canvas(title, height, body, description):
+              stamp = datetime.now(timezone.utc).strftime('%d %b %Y')
+              return f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="{height}" viewBox="0 0 495 {height}" role="img" aria-labelledby="title desc">
+          <title id="title">{escape(title)}</title><desc id="desc">{escape(description)}</desc>
+          <rect width="495" height="{height}" rx="10" fill="#0d1117"/>
+          <g font-family="Arial, sans-serif"><text x="24" y="34" fill="#58a6ff" font-size="18" font-weight="700">{escape(title)}</text>
+          {body}
+          <text x="24" y="{height-17}" fill="#8b949e" font-size="11">Public GitHub data · Updated {stamp} UTC</text></g></svg>'''
+          
+          
+          def update_statistics():
+              repos = []
+              page = 1
+              while True:
+                  batch = api(f'/users/{USER}/repos?per_page=100&type=owner&page={page}')
+                  repos.extend(batch)
+                  if len(batch) < 100:
+                      break
+                  page += 1
+              original = [r for r in repos if not r['fork'] and not r['private']]
+              counts = {}
+              for state in ('merged', 'open'):
+                  query = urlencode({'q': f'author:{USER} is:pr is:{state} is:public', 'per_page': 1})
+                  data = api('/search/issues?' + query)
+                  if data.get('incomplete_results'):
+                      raise ValueError('Incomplete GitHub search results')
+                  counts[state] = data['total_count']
+              rows = [('Original public repositories', len(original)),
+                      ('Stars across original repositories', sum(r['stargazers_count'] for r in original)),
+                      ('Merged public pull requests', counts['merged']),
+                      ('Open public pull requests', counts['open'])]
+              body = ''.join(f'<text x="24" y="{72+i*29}" fill="#c9d1d9" font-size="14">{escape(label)}</text>'
+                             f'<text x="465" y="{72+i*29}" text-anchor="end" fill="#f0f6fc" font-size="16" font-weight="700">{value:,}</text>'
+                             for i, (label, value) in enumerate(rows))
+              stats = canvas('Public GitHub Activity', 207, body, '; '.join(f'{k}: {v}' for k, v in rows))
+              languages = Counter(r['language'] for r in original if r.get('language'))
+              total = sum(languages.values())
+              if not total:
+                  raise ValueError('No public repository languages returned')
+              colors = ['#00ADD8', '#3178C6', '#a371f7', '#e3b341', '#3fb950']
+              parts = []
+              for i, (language, count) in enumerate(languages.most_common(5)):
+                  y = 70 + i*34
+                  percent = count / total * 100
+                  parts.append(f'<text x="24" y="{y}" fill="#c9d1d9" font-size="13">{escape(language)}</text>'
+                               f'<rect x="145" y="{y-11}" width="245" height="10" rx="5" fill="#21262d"/>'
+                               f'<rect x="145" y="{y-11}" width="{245*count/total:.1f}" height="10" rx="5" fill="{colors[i]}"/>'
+                               f'<text x="465" y="{y}" text-anchor="end" fill="#c9d1d9" font-size="12">{percent:.1f}%</text>')
+              body = ''.join(parts) + '<text x="24" y="244" fill="#8b949e" font-size="11">By repository count, not code volume or proficiency</text>'
+              language_svg = canvas('Public Repositories by Primary Language', 284, body,
+                                    'Primary-language distribution across original public repositories. ' + str(dict(languages)))
+              # Replace only after every public API request and both renders succeed.
+              (OUT/'stats.svg').write_text(stats)
+              (OUT/'languages.svg').write_text(language_svg)
+              print('Updated public activity and language cards')
+          
+          
+          def update_streak():
+              data = get(f'https://streak-stats.demolab.com/?user={USER}&theme=github-dark-blue&hide_border=true')
               root = ET.fromstring(data)
-              if root.tag != "{http://www.w3.org/2000/svg}svg":
-                  raise ValueError("Expected an SVG")
-              text = " ".join(root.itertext()).lower()
-              if "current streak" not in text or "longest streak" not in text:
-                  raise ValueError("Streak service did not return a complete card")
-              target.parent.mkdir(parents=True, exist_ok=True)
-              target.write_bytes(data)
-          except Exception as error:
-              if not target.exists():
-                  raise
-              print(f"Keeping previous streak card: {type(error).__name__}")
-          PY
+              text = ' '.join(root.itertext()).lower()
+              if root.tag != '{http://www.w3.org/2000/svg}svg' or 'current streak' not in text or 'longest streak' not in text:
+                  raise ValueError('Streak service returned an incomplete card')
+              (OUT/'streak.svg').write_bytes(data)
+              print('Updated contribution streak card')
+          
+          
+          for operation, files in [(update_statistics, ['stats.svg', 'languages.svg']),
+                                   (update_streak, ['streak.svg'])]:
+              try:
+                  operation()
+              except Exception as error:
+                  if not all((OUT/name).exists() for name in files):
+                      raise
+                  print(f'Keeping previous card after {type(error).__name__}: {error}')
+          PYTHON
       - name: Commit refreshed cards
         run: |
           git config user.name "github-actions[bot]"
@@ -72,5 +134,6 @@ jobs:
           if git diff --cached --quiet; then
             exit 0
           fi
-          git commit -m "chore: refresh profile activity cards"
+          git commit -m "chore: refresh public profile cards"
+          git pull --rebase origin main
           git push

@@ -16,16 +16,15 @@ backend delivery across healthcare, commerce, and enterprise ERP systems.
 - Certified Kubernetes Administrator (CKA), Linux Foundation / CNCF: [View badge](https://www.credly.com/badges/3db71936-40a0-4806-850f-39dc584f5857/public_url)
 - AWS Certified Solutions Architect - Associate: [View badge](https://www.credly.com/badges/bde40158-6f10-4a49-b8be-bdb92366d278/public_url)
 
+## Contribution streak and repository
+
+![GitHub contribution streak](./profile/streak.svg)
+
+
 ## GitHub Activity
 
 ![Public GitHub activity statistics](./profile/stats.svg)
 
-<details>
-<summary>Contribution streak and repository languages</summary> 
-
-![GitHub contribution streak](./profile/streak.svg)
-
-</details>
 
 ## Let's Connect
 

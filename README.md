@@ -6,7 +6,7 @@ backend delivery across healthcare, commerce, and enterprise ERP systems.
 
 ## Tech Stack
 
-[![Go, TypeScript, PostgreSQL, Docker and Kubernetes](https://skillicons.dev/icons?i=go,ts,postgres,docker,kubernetes&perline=5)](https://github.com/manenim?tab=repositories)
+[![Go, TypeScript, PostgreSQL, Docker and Kubernetes](https://skillicons.dev/icons?i=go,ts,python,postgres,docker,kubernetes&perline=5)](https://github.com/manenim?tab=repositories)
 
 ## Certifications
 
@@ -29,7 +29,7 @@ backend delivery across healthcare, commerce, and enterprise ERP systems.
 ## Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/manenimabasi-udoh)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:maneni@gmail.com)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:manenimabasiudoh@gmail.com)
 [![pkg.go.dev](https://img.shields.io/badge/pkg.go.dev-00ADD8?style=flat-square&logo=go&logoColor=white)](https://pkg.go.dev/github.com/manenim)
 
 > Open to remote Senior Backend Engineer, Lead Backend Engineer, and Go engineering roles.
